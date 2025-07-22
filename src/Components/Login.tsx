@@ -1,4 +1,5 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState } from 'react';
+import type { FormEvent } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import Footer from './Footer';
 import './Login.css';
@@ -112,9 +113,10 @@ const Login: React.FC<LoginProps> = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
-<Footer/>
+
 
 export default Login;
