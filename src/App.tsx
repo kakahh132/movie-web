@@ -5,8 +5,9 @@ import "./App.css";
 import Watchlist from "./Components/Watchlist";
 import Home from "./Components/Home";
 import Login from "./Components/Login";
-import SignUp from "./Components/SIgnup";
+
 import Footer from "./Components/Footer";
+import SignUp from "./Components/SIgnup";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Header />
       <Routes>
          <Route path="/Footer" element={<Footer />} />
-         <Route path="/Signup" element={<SignUp />} />
+          <Route path="/Signup" element={<SignUp />} />
        <Route path="/Login" element={<Login />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Watchlist" element={<Watchlist/>} />
