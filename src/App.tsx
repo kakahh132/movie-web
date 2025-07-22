@@ -7,8 +7,7 @@ import Home from "./Components/Home";
 import Login from "./Components/Login";
 
 import Footer from "./Components/Footer";
-import SignUp from "./Components/SIgnup";
-
+import SignUp from "./Components/Signup";
 function App() {
   return (
     <Router>
