@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from './Footer';
-import './SignUp.css';
+import './signUp.css';
 
 type SignUpProps = {
   // Props can be added here if needed
