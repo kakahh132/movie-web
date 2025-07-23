@@ -6,7 +6,7 @@ const Header = () => {
     <header className="navbar">
       <div className="navbar-container">
         <div className="navbar-left">
-          <Link to="/Login" className="logo"> {/* Changed from "/" to "/Login" */}
+          <Link to="/" className="logo"> {/* Keep as "/" for home */}
             <span className="logo-main">CINEMAX</span>
             <span className="logo-dot">.</span>
           </Link>
@@ -14,7 +14,6 @@ const Header = () => {
 
         <div className="navbar-center">
           <ul className="nav-links">
-           
             <li><Link to="/Home">Home</Link></li>
             <li><Link to="/movies">Movies</Link></li>
             <li><Link to="/tv">TV Shows</Link></li>
@@ -26,11 +25,10 @@ const Header = () => {
         <div className="navbar-right">
           <div className="search-bar">
             <input type="text" placeholder="Search movies..." />
-            <button><i className="fas fa-search"></i></button>
+          
           </div>
-          <button className="account-btn">
-            <i className="fas fa-user"></i>
-          </button>
+          <Link to="/Signup"className="signin-button">Sign In</Link>
+        
         </div>
       </div>
     </header>
