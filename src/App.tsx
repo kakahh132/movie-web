@@ -18,9 +18,9 @@ function App() {
          <Route path="/Signup" element={<SignUp />} /> 
         <Route path="/Search" element={<Search />} />
         <Route path="/Watchlist" element={<Watchlist/>} />
-        <Route path="/" element={<Home/>} />
+        <Route path="/Home" element={<Home/>} />
         <Route path="/Header"element={<Header/>} />
-         <Route path="/Hero" element={<Hero/>} />
+         <Route path="/" element={<Hero/>} />
         
         {/* Add other routes as needed */}
       </Routes>

@@ -149,7 +149,7 @@ const Hero: React.FC = () => {
           </button>
 
           <div className="login-prompt">
-            Already have an account? <Link to="/Signup" className="login-link">Sign in</Link>
+            Already have an account? <Link to="/Home" className="login-link">Sign in</Link>
           </div>
         </div>
       </div>
