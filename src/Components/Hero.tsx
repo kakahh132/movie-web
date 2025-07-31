@@ -153,7 +153,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      
     </div>
   );
 };
