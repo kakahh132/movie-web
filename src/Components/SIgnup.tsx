@@ -113,7 +113,7 @@ const SignUp:React.FC<LoginProps> = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      
     </div>
   );
 };
