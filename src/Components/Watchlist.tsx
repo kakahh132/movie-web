@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Watchlist.css";
+import Header from "./Header";
 import hhh from "../assets/hhh.jpeg";
 import Footer from "./Footer";
 import h1 from "../assets/h1.jpeg";
@@ -50,7 +51,9 @@ const Watchlist = () => {
   const [selectedItem, setSelectedItem] = useState<WatchlistItem | null>(null);
 
   return (
+    
     <div className="watchlist-container">
+      <Header/>
       <h1 className="watchlist-header">My Watchlist</h1>
       
       {selectedItem ? (

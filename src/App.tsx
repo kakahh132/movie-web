@@ -5,6 +5,7 @@ import "./App.css";
 import Watchlist from "./Components/Watchlist";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
+import SignUp from "./Components/Signup";
 import Hero from "./Components/Hero";
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         
          <Route path="/Footer" element={<Footer />} />
-          
+          <Route path="/Signup"element={<SignUp />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Watchlist" element={<Watchlist/>} />
         <Route path="/Home" element={<Home/>} />
