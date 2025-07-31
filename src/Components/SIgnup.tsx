@@ -5,7 +5,7 @@ import Footer from './Footer';
 import './Signup.css'
 
 type LoginProps = {
-  // Props can be added here if needed
+  
 };
 
 const SignUp:React.FC<LoginProps> = () => {
