@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import type { FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Footer from './Footer';
 import '../styles/hero.css';
 
 const Hero: React.FC = () => {
