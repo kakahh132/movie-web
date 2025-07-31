@@ -10,16 +10,15 @@ import SignUp from "./Components/Signup";
 function App() {
   return (
     <Router>
-     
+    
        
       <Routes>
-        
+        <Route path="/Header" element={<Header />} />
          <Route path="/Footer" element={<Footer />} />
          <Route path="/Signup" element={<SignUp />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Watchlist" element={<Watchlist/>} />
         <Route path="/Home" element={<Home/>} />
-        <Route path="/Header"element={<Header/>} />
          <Route path="/" element={<Hero/>} />
         
         {/* Add other routes as needed */}
