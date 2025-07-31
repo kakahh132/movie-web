@@ -2,22 +2,17 @@ import React, { useState } from 'react';
 import type { FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from './Footer';
-import '../styles/hero.css'
+import '../styles/hero.css';
 
-
-type SignUpProps = {
-  // Props can be added here if needed
-};
-
-const Hero: React.FC<SignUpProps> = () => {
+const Hero: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
     confirmPassword: ''
   });
-  const [error, setError] = useState<string>('');
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,7 +39,6 @@ const Hero: React.FC<SignUpProps> = () => {
 
     try {
       setIsLoading(true);
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       navigate('/');
     } catch (err) {
@@ -53,8 +47,6 @@ const Hero: React.FC<SignUpProps> = () => {
       setIsLoading(false);
     }
   };
-
-
 
   return (
     <div className="signup-page">
@@ -132,12 +124,12 @@ const Hero: React.FC<SignUpProps> = () => {
             </div>
             
             <button 
-  type="submit" 
-  className="signup-button"
-  onClick={() => navigate('/Home')}
->
-  Sign Up
-</button>
+              type="submit" 
+              className="signup-button"
+              disabled={isLoading}
+            >
+              {isLoading ? 'Signing Up...' : 'Sign Up'}
+            </button>
           </form>
 
           <div className="divider">
@@ -146,7 +138,7 @@ const Hero: React.FC<SignUpProps> = () => {
             <span className="divider-line"></span>
           </div>
 
-          <button className="google-signup-button">
+          <button type="button" className="google-signup-button">
             <svg className="google-icon" viewBox="0 0 24 24">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
               <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -157,7 +149,7 @@ const Hero: React.FC<SignUpProps> = () => {
           </button>
 
           <div className="login-prompt">
-            Already have an account? <Link to="/Signup"className="login-link">Sign in</Link>
+            Already have an account? <Link to="/Signup" className="login-link">Sign in</Link>
           </div>
         </div>
       </div>
