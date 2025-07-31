@@ -6,7 +6,7 @@ import Watchlist from "./Components/Watchlist";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
-import SignUp from "./Components/Signup";
+
 function App() {
   return (
     <Router>
@@ -15,7 +15,6 @@ function App() {
       <Routes>
         <Route path="/Header" element={<Header />} />
          <Route path="/Footer" element={<Footer />} />
-         <Route path="/Signup" element={<SignUp />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Watchlist" element={<Watchlist/>} />
         <Route path="/Home" element={<Home/>} />
